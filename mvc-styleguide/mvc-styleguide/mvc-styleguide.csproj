@@ -231,6 +231,7 @@
     <Content Include="Views\Shared\StyleGuide\_ColorSwatches.cshtml" />
     <Content Include="Views\Shared\StyleGuide\_Buttons.cshtml" />
     <Content Include="Views\Home\StyleGuide.cshtml" />
+    <Content Include="Views\Shared\StyleGuide\_grid.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

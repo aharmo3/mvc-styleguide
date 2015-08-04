@@ -2,6 +2,7 @@
     ViewBag.Title = "Style Guide";
 }
 <link href="~/Content/SyleGuide.css" rel="stylesheet" />
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=default"></script>
 <section class="container hero">
     <div class="row">
         <div class="col-sm-12">
@@ -40,8 +41,12 @@
 </div>
 @section scripts {
     <script>
+        $(function () {
+            escapeHtml();
+        });
         (function () {
             displayCssInfoFor();
+           
         })();
 
         // https://gist.github.com/EdCharbeneau/f035747c48943be4337d
@@ -71,5 +76,16 @@
                 })
             })
         }
+
+        var escapeHtml = function () {
+            $('.code').each(function () {
+                var codeContent = $(this).html();
+
+                $('<pre/>')
+                  .appendTo(this)
+                  .text(codeContent)
+                  .addClass('prettyprint lang-html');
+            });
+        };
     </script>
 }
