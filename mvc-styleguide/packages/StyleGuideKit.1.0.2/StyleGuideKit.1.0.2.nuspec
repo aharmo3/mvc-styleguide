@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>StyleGuideKit</id>
+    <version>1.0.2</version>
+    <title>Style Guide Starter Kit</title>
+    <authors>Ed</authors>
+    <owners>Ed</owners>
+    <projectUrl>http://goo.gl/BcpXWs</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a starter kit for creating a Style Guide for your MVC application. This kit was created as a code sample for the article On Creating a Live Style Guide for MVC Application Development (Simple-Talk.com).</description>
+    <summary>This is a starter kit for creating a Style Guide for your MVC application.</summary>
+    <tags>Starter kit MVC Style Guide Bootstrap</tags>
+    <dependencies>
+      <dependency id="Prototyping_MVC" version="1.2" />
+    </dependencies>
+  </metadata>
+</package>

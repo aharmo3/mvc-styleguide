@@ -1,0 +1,109 @@
+﻿@using Prototyping.Ipsum
+<h2>Headings</h2>
+<section id="typography">
+    <h1>
+        h1 Header
+    </h1>
+
+    <h2>
+        h2 Header
+    </h2>
+    <h3>
+        h3 Header
+    </h3>
+    <h4>
+        h4 Header
+    </h4>
+    <h5>
+        h5 Header
+    </h5>
+    <h6>
+        h6 Header
+    </h6>
+    <h3>Paragraph</h3>
+    @Html.Ipsum().p()
+    <!-- Information panels -->
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Important: font information</h3>
+        </div>
+        <div class="panel-body">
+            <p>Use <strong>Your-Font-Name-Here</strong> for h1-h4 headings. For all other elements use <strong>Your-Font-Name-Here</strong>.</p>
+        </div>
+    </div>
+    @HeaderInfoPanel()
+    <h3>Lists</h3>
+    <h4>Unordered list</h4>
+    @Html.Ipsum().ul()
+    <h4>
+        Ordered list
+    </h4>
+    @Html.Ipsum().ol()
+    <h4>
+        Unstyled list
+    </h4>
+    @Html.Ipsum().ul(ulAttributes: new { @class = "list-unstyled" })
+    <h4>
+        Inline list
+    </h4>
+    @Html.Ipsum().ul(ulAttributes: new { @class = "list-inline" })
+    @ListInfoPanel()
+</section>
+@helper HeaderInfoPanel()
+{
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#typography-markup">
+                        Markup
+                    </a>
+                </h4>
+            </div>
+            <div id="typography-markup" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <!-- Replace the gist embed with your own code. -->
+                    <script src="https://gist.github.com/EdCharbeneau/d2d0f509fa76dd74bbc9.js?file=Typography.headers.html"></script>
+                </div>
+            </div>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#typography-css">
+                        Font Sizes
+                    </a>
+                </h4>
+            </div>
+            <div id="typography-css" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>h1 = <span data-properties-for='{"element": "#typography > h1", "css": ["font-size"]}'></span></p>
+                    <p>h2 = <span data-properties-for='{"element": "#typography > h2", "css": ["font-size"]}'></span></p>
+                    <p>h3 = <span data-properties-for='{"element": "#typography > h3", "css": ["font-size"]}'></span></p>
+                    <p>h4 = <span data-properties-for='{"element": "#typography > h4", "css": ["font-size"]}'></span></p>
+                    <p>h5 = <span data-properties-for='{"element": "#typography > h5", "css": ["font-size"]}'></span></p>
+                    <p>h6 = <span data-properties-for='{"element": "#typography > h6", "css": ["font-size"]}'></span></p>
+                    <p>p = <span data-properties-for='{"element": "#typography > p", "css": ["font-size"]}'></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@helper ListInfoPanel()
+{
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#typography-lists">
+                        Markup
+                    </a>
+                </h4>
+            </div>
+            <div id="typography-lists" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <!-- Replace the gist embed with your own code. -->
+                    <script src="https://gist.github.com/EdCharbeneau/d2d0f509fa76dd74bbc9.js?file=Typography.lists.html"></script>
+                </div>
+            </div>           
+        </div>
+    </div>
+}

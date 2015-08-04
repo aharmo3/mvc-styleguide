@@ -1,0 +1,72 @@
+﻿@using Prototyping.Ipsum
+<h2>Buttons</h2>
+<section id="buttons">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Important: button pairs</h3>
+        </div>
+        <div class="panel-body">
+            <p>
+                Always use the default style with <strong>cancel</strong> actions when paired with another action [ primary | danger | success ]
+            </p>
+        </div>
+    </div>
+   
+    <div class="panel panel-default">
+        <div class="panel-body">
+            
+            <p><strong>Example:</strong></p>
+            <p>
+                <a class="btn btn-default" href="#">Cancel</a>
+
+                <button type="button" class="btn btn-primary">Submit</button>
+            </p>
+            <p><strong>Example:</strong></p>
+            <p>
+                <a class="btn btn-default" href="#">Cancel</a>
+
+                <button type="button" class="btn btn-danger">Delete</button> 
+            </p>
+            <p><strong>Example:</strong></p>
+            <p>
+                <a class="btn btn-default" href="#">Cancel</a>
+
+                <button type="button" class="btn btn-success">Save</button>
+            </p>
+        </div>
+    </div>
+
+    @ButtonInfoPanel()
+</section>
+@helper ButtonInfoPanel()
+{
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#button-info">
+                        Markup and additional styles
+                    </a>
+                </h4>
+            </div>
+            <div id="button-info" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <script src="https://gist.github.com/EdCharbeneau/d2d0f509fa76dd74bbc9.js?file=Buttons.html"></script>
+                </div>
+            </div>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#button-helpers">
+                        HTML Helpers
+                    </a>
+                </h4>
+            </div>
+            <div id="button-helpers" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <!-- Replace the gist embed with your own code. -->
+                    <script src="https://gist.github.com/EdCharbeneau/d2d0f509fa76dd74bbc9.js?file=Buttons.helpers.cshtml"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+}

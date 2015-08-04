@@ -1,0 +1,59 @@
+﻿/*
+* For example only, please remove these when building your own style guide.
+*/
+
+.hero {
+    background-color: #6f5499;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+.widget {
+    padding:25px;
+    background-color: #ededed;
+    margin-bottom:16px;
+}
+/*
+* Style guide specific styles only
+*/
+
+/* Swatches */
+ .swatches div {
+        height: 120px;
+        width: 120px;
+        display: block;
+        text-align: center;
+    }
+
+    .swatches .primary {
+        background-color: #428bca;
+        color: white;
+    }
+
+        .swatches .primary.hover {
+            background-color: #3071a9;
+            color: white;
+        }
+
+    .swatches .secondary {
+        color: white;
+        background-color: #5bc0de;
+    }
+
+        .swatches .secondary.hover {
+            color: white;
+            background-color: #31b0d5;
+        }
+
+    .swatches .hero {
+        background-color: #6f5499;
+        color: white;
+    }
+
+    .swatches .dark {
+        background-color: #333;
+        color: white;
+    }
