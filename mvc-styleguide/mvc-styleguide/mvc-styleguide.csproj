@@ -189,6 +189,8 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="App_Readme\HowToStyleGuide_Readme.md" />
+    <Content Include="App_Code\buttons.cshtml" />
+    <Content Include="App_Code\widget.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

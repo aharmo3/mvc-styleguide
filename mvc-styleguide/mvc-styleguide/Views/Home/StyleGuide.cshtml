@@ -2,7 +2,7 @@
     ViewBag.Title = "Style Guide";
 }
 <link href="~/Content/SyleGuide.css" rel="stylesheet" />
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=default"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <section class="container hero">
     <div class="row">
         <div class="col-sm-12">
@@ -79,7 +79,7 @@
 
         var escapeHtml = function () {
             $('.code').each(function () {
-                var codeContent = $(this).html();
+                var codeContent = $(this).text();
 
                 $('<pre/>')
                   .appendTo(this)

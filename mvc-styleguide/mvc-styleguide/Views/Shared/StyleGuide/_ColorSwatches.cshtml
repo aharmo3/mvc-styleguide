@@ -17,26 +17,5 @@
             <div class="alert-success">success</div>
         </li>
     </ul>
-    @ListInfoPanel()
 </section>
 
-@helper ListInfoPanel()
-{
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#swatch-info">
-                        Sass<small>, Less or  CSS</small>
-                    </a>
-                </h4>
-            </div>
-            <div id="swatch-info" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <!-- Replace the gist embed with your own code. -->
-                    <script src="https://gist.github.com/EdCharbeneau/d2d0f509fa76dd74bbc9.js?file=Colors.scss"></script>
-                </div>
-            </div>
-        </div>
-    </div>
-}
