@@ -4,11 +4,14 @@
 
 <h2>Buttons</h2>
 <section id="buttons">
-    <div class="code"> 
         @buttons.editingButtons(new MyModel() { Title = "Super Title III" })
-    </div>
     <pre>
-                @@buttons.editingButtons(new MyModel() { Title = "Super Title III" })
-</pre>
+    @@buttons.editingButtons(new MyModel() { Title = "Super Title III" })
+    </pre>
   
+    @buttons.editingButtons(new MyModel() { Title = "Save Button Two", hasDeleteBtn = true })
+
+    <pre>
+    @@buttons.editingButtons(new MyModel() { Title = "Save Button Two", hasDeleteBtn = true  })
+    </pre>
 </section>

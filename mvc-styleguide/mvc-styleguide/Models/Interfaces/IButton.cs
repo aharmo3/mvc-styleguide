@@ -9,5 +9,6 @@ namespace mvc_styleguide.Models.Interfaces
     public interface IButton
     {
         string Title { get; }
+        bool hasDeleteBtn { get;  }
     }
 }

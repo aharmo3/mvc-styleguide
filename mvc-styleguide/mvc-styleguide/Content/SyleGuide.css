@@ -7,6 +7,12 @@
     color: white;
 }
 
+pre {
+    padding: 5px;
+    border:1px solid #333;
+    display: block;
+}
+
 footer {
     background-color: #333;
     color: white;
