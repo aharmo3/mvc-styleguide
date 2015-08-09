@@ -1,28 +1,43 @@
 ﻿@{
     ViewBag.Title = "Style Guide";
 }
+
+@*VIRTUOSO BUNDLES*@
 <link href="http://www.virtuoso.com/TouchPoints/Sites/VCom/ContentBundle/base.bundle.css?v=TFqMPbZJYARhUuZUZhnCenuzGeHKPE6ewcs1WT08q281" type="text/css" rel="stylesheet"></link>
-
-
 <link href="http://www.virtuoso.com/TouchPoints/Sites/VCom/ContentBundle/product-detail.2.0.bundle.css?v=GB4qUREnEVZ6tb8CcsJFeVtzEqBOkwIG9ukEEynrcz41" type="text/css" rel="stylesheet"></link>
-
 <link href="http://www.virtuoso.com/TouchPoints/Sites/VCom/ContentBundle/product-Hotel-detail.bundle.css?v=3cE0t921CDDDu4b5DTuVw-xHmcH7L579Ov7bo4U1nPQ1" type="text/css" rel="stylesheet"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://www.virtuoso.com//TouchPoints/Sites/VCom/ContentBundle/base.bundle.js?v=kMOM0LdWHUrwdJjifdCxGOVvlCW-kcjtr77fQmDFFG41"></script>
+<!-- TpMap Assets -->
+<script src="//maps.googleapis.com/maps/api/js?sensor=false&v=3.exp" type="text/javascript"> </script>
+<script src="http://www.virtuoso.com//TouchPoints/Sites/VCom/ContentBundle/product-detail.2.0.bundle.js?v=xgMHysdd0iQEH76gIyAnEnGcqq4EAzbg9TsZIK3JvwI1"></script>
+<script src="http://www.virtuoso.com//TouchPoints/Sites/VCom/ContentBundle/product-agency-detail.bundle.js?v=pzYiYQjS76UGNHuDRh_xO0qOZiVqfP5MyBzsKOazDVU1"></script>
+
+
+
 <style>
-    Body {
-        background-image:none;
+    @*CSS OVERRIDES *@
+    
+     Body {
+        background-image: none;
         font-size: 16px;
     }
     P {
         line-height:1.7rem;
     }
-    pre {
-        clear:both;
-        padding:10px;
-        font-family: "Courier New";
-        font-size: 12px;
-        margin-top: 10px;
 
+    /*Styles for code snippet*/
+    pre.prettyprint {
+        display: block;
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 12px;
+        white-space: nowrap;
     }
+    pre.prettyprint * {
+        font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    }
+
 </style>
 
 <script type="text/javascript" src="//use.typekit.net/woj4pub.js"></script>
@@ -52,7 +67,6 @@
     <div class="row">
         <div class="col-sm-12">
             <h1>Style Guide Starter</h1>
-            <p>Customize this starter for your website or application.</p>
         </div>
     </div>
 </section>
@@ -64,15 +78,14 @@
             @Html.Partial("~/Views/Shared/StyleGuide/_Buttons.cshtml")
             <hr />
             @Html.Partial("~/Views/Shared/StyleGuide/_Typography.cshtml")
+            <hr />
+            @Html.Partial("~/Views/Shared/StyleGuide/_Widget.cshtml")
         </div>
 
     </div>
 </div>
 @section scripts {
     <script>
-        $(function () {
-        /*    escapeHtml();*/
-        });
         (function () {
             displayCssInfoFor();
            
@@ -106,15 +119,5 @@
             })
         }
 
-        var escapeHtml = function () {
-            $('.code').each(function () {
-                var codeContent = $(this).text();
-
-                $('<pre/>')
-                  .appendTo(this)
-                  .text(codeContent)
-                  .addClass('prettyprint lang-html');
-            });
-        };
     </script>
 }

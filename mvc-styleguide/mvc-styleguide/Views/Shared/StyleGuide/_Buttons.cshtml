@@ -4,14 +4,18 @@
 
 <h2>Buttons</h2>
 <section id="buttons">
-        @buttons.editingButtons(new MyModel() { Title = "Super Title III" })
-    <pre>
-    @@buttons.editingButtons(new MyModel() { Title = "Super Title III" })
+    @buttons.editingButtons(new MyModel() { Title = "Super Title III", buttonID = "packagesExample" })
+    <pre class="prettyprint">
+        @@buttons.editingButtons(new MyModel() { Title = "Super Title III", buttonID = "packagesExample" })
     </pre>
   
-    @buttons.editingButtons(new MyModel() { Title = "Save Button Two", hasDeleteBtn = true })
+    @buttons.editingButtons(new MyModel() { Title = "Save Button Two", hasDeleteBtn = true, buttonID = "packagesExample" })
 
-    <pre>
-    @@buttons.editingButtons(new MyModel() { Title = "Save Button Two", hasDeleteBtn = true  })
+    <pre class="prettyprint">
+        @@buttons.editingButtons(new MyModel() { Title = "Save Button Two", hasDeleteBtn = true, buttonID = "packagesExample"  })
     </pre>
+
+    <div id="advisorContactButtons" class="btn-cta">
+        <a href="/advisors/">Book with a Travel Advisor</a>
+    </div>
 </section>

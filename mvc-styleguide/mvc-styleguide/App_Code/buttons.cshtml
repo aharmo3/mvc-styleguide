@@ -3,19 +3,15 @@
 @helper editingButtons (IButton model) {
     <div class="grid_12 topBuffer finish-editing-controls clearfix">
         @if(model.hasDeleteBtn) {
-            <input type="button" class="delete-edit"  value="Delete Product">
+            <input type="button" class="delete-edit" id="@String.Format("delete-{0}", model.buttonID)" value="Delete Product">
         }
-        <button class="save-edit">@String.Format(model.Title)</button>
-        <button  class="cancel-edit">Cancel</button>
+        <button class="save-edit" id="@String.Format("saveBtn-{0}", model.buttonID)">@String.Format(model.Title)</button>
+        <button class="cancel-edit" id="@String.Format("cancelBtn-{0}", model.buttonID)">Cancel</button>
     </div>
 }}
 
-
-@helper editingButtonsWithDelete(IButton model)
-{
-    <div class="grid_12 topBuffer finish-editing-controls clearfix">
-        
-        <button class="save-edit">@String.Format(model.Title)</button>
-        <button class="cancel-edit">Cancel</button>
-    </div>
+@helper ButtonCta(IButton model) { 
+    <a href="" class="button-cta">@model.Title</a>
 }}
+
+

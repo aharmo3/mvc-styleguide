@@ -7,6 +7,7 @@ namespace mvc_styleguide.Models
         public string Body { get; set; }
         public string Title { get; set; }
         public bool hasDeleteBtn {get; set;}
+        public string buttonID { get; set; }
     }
 
 
