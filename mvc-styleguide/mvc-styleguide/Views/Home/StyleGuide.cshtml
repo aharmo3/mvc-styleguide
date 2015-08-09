@@ -1,7 +1,44 @@
 ﻿@{
     ViewBag.Title = "Style Guide";
 }
-<link href="~/Content/SyleGuide.css" rel="stylesheet" />
+<link href="http://www.virtuoso.com/TouchPoints/Sites/VCom/ContentBundle/base.bundle.css?v=TFqMPbZJYARhUuZUZhnCenuzGeHKPE6ewcs1WT08q281" type="text/css" rel="stylesheet"></link>
+
+
+<link href="http://www.virtuoso.com/TouchPoints/Sites/VCom/ContentBundle/product-detail.2.0.bundle.css?v=GB4qUREnEVZ6tb8CcsJFeVtzEqBOkwIG9ukEEynrcz41" type="text/css" rel="stylesheet"></link>
+
+<link href="http://www.virtuoso.com/TouchPoints/Sites/VCom/ContentBundle/product-Hotel-detail.bundle.css?v=3cE0t921CDDDu4b5DTuVw-xHmcH7L579Ov7bo4U1nPQ1" type="text/css" rel="stylesheet"></link>
+<style>
+    Body {
+        background-image:none;
+        font-size: 16px;
+    }
+    P {
+        line-height:1.7rem;
+    }
+</style>
+
+<script type="text/javascript" src="//use.typekit.net/woj4pub.js"></script>
+<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+<script type="text/javascript">
+    // Load jQuery from local server if CDN is down.
+    if (typeof jQuery == 'undefined') {
+        var e = document.createElement('script');
+        e.src = '/TouchPoints/Sites/VCom/Scripts/jquery-1.8.3.js';
+        e.type = 'text/javascript';
+        document.getElementsByTagName("head")[0].appendChild(e);
+
+        e = document.createElement('script');
+        e.src = '/TouchPoints/Sites/VCom/Scripts/jquery-ui/jquery-ui-1.9.2.js';
+        e.type = 'text/javascript';
+        document.getElementsByTagName("head")[0].appendChild(e);
+    }
+</script>
+
+
+
+
+
+
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <section class="container hero">
     <div class="row">
@@ -16,33 +53,17 @@
 
     <div class="row">
         <div class="col-sm-8">
-            @Html.Partial("~/Views/Shared/StyleGuide/_ColorSwatches.cshtml")
-            <hr />
-            @Html.Partial("~/Views/Shared/StyleGuide/_Typography.cshtml")
-            <hr />
             @Html.Partial("~/Views/Shared/StyleGuide/_Buttons.cshtml")
             <hr />
-            @Html.Partial("~/Views/Shared/StyleGuide/_Widget.cshtml")
-            <hr />
+            @Html.Partial("~/Views/Shared/StyleGuide/_Typography.cshtml")
         </div>
-        <div class="col-sm-4">
-            <h2>Components</h2>
-            <div class="list-group">
-                <a href="#colors" class="list-group-item">Colors</a>
-                <a href="#typography" class="list-group-item">Typography</a>
-                <a href="#buttons" class="list-group-item">Buttons</a>
-                <a href="#widget" class="list-group-item">Widget</a>
-                <a href="#" class="list-group-item">Add more</a>
-                <!-- Customize with your own components like: -->
-                <!-- Panes, forms, dialogs, galleries, alerts, cards, etc... -->
-            </div>
-        </div>
+      
     </div>
 </div>
 @section scripts {
     <script>
         $(function () {
-            escapeHtml();
+        /*    escapeHtml();*/
         });
         (function () {
             displayCssInfoFor();

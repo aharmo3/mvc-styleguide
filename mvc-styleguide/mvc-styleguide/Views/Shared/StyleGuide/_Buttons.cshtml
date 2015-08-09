@@ -1,9 +1,14 @@
 ﻿@using Prototyping.Ipsum
 @using Prototyping.Placeholdit
+@using mvc_styleguide.Models;
+
 <h2>Buttons</h2>
 <section id="buttons">
     <div class="code"> 
-        @buttons.editingButtons("hi there")
+        @buttons.editingButtons(new MyModel() { Title = "Super Title III" })
     </div>
-
+    <pre>
+                @@buttons.editingButtons(new MyModel() { Title = "Super Title III" })
+</pre>
+  
 </section>
