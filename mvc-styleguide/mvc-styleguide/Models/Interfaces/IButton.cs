@@ -11,5 +11,17 @@ namespace mvc_styleguide.Models.Interfaces
         string Title { get; }
         bool hasDeleteBtn { get; }
         string buttonID { get; }
+
+        string TruncateText { get; set; }
+
+        string truncateHeight { get; set; }
     }
+
+    interface ITruncation
+    {
+        string TruncateText { get; }
+        bool TruncateHasIcons { get; }
+        string truncateHeight { get; }
+    }
+
 }

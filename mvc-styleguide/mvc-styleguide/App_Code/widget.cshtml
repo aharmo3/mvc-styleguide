@@ -1,0 +1,14 @@
+﻿@using mvc_styleguide.Models.Interfaces
+
+@helper truncate(IButton model)
+{
+    <script>
+        $(function () {
+            $('#truncate').dotdotdot({
+                height: @String.Format(model.truncateHeight)
+            });
+        });
+    </script>
+    <div id="truncate" class="truncate-dotdotdot" style="width:100px">@String.Format(model.TruncateText)</div>
+
+}

@@ -21,6 +21,28 @@ footer {
 * Style guide specific styles only
 */
 
+     Body {
+        background-image: none;
+        font-size: 16px;
+    }
+    P {
+        line-height:1.7rem;
+    }
+
+    /*Styles for code snippet*/
+    pre.prettyprint {
+        display: block;
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 12px;
+        white-space: nowrap;
+        overflow: auto;
+    }
+    pre.prettyprint * {
+        font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    }
+
+
 /* Swatches */
  .swatches div {
         height: 120px;
@@ -58,6 +80,7 @@ footer {
         background-color: #333;
         color: white;
     }
+
 
 
 

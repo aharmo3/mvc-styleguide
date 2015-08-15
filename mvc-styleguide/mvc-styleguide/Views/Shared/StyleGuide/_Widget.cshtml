@@ -1,14 +1,8 @@
-﻿<h2>Modals</h2>
+﻿@using Prototyping.Ipsum
+@using Prototyping.Placeholdit
+@using mvc_styleguide.Models;
+
+<h2>Truncation</h2>
 <section id="widget">
-    <!-- Information panels -->
-    <div class="widget">Some widget goes here.</div>
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">Important: JavaScript Requirement</h3>
-        </div>
-        <div class="panel-body">
-            <p>This component requires <strong>widget.js</strong></p>
-            <script src="https://gist.github.com/EdCharbeneau/d2d0f509fa76dd74bbc9.js?file=widget.js.html"></script>
-        </div>
-    </div>
+    @widget.truncate(new MyModel() {truncateHeight = "40" , TruncateText = " kasldjf  sdkfj asd; flasdkfj;kdsajfasd jak dksdj fasdj kljdks kasldjf  sdkfj asd; flasdkfj;kdsajfasd jak dksdj fasdj kljdks" })
 </section>
