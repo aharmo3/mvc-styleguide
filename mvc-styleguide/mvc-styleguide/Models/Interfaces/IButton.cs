@@ -17,11 +17,5 @@ namespace mvc_styleguide.Models.Interfaces
         string truncateHeight { get; set; }
     }
 
-    interface ITruncation
-    {
-        string TruncateText { get; }
-        bool TruncateHasIcons { get; }
-        string truncateHeight { get; }
-    }
 
 }

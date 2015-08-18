@@ -13,4 +13,6 @@ namespace mvc_styleguide.Models
         public string truncateHeight { get; set; }
     }
 
+    public class truncateData
+
 }
