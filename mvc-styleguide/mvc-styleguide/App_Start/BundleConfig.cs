@@ -9,17 +9,17 @@ namespace mvc_styleguide
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/thirdParty/jquery-1.10.2.min.js"));
+                        "~/bower_components/jquery/dist/jquery.js"));
 
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/thirdParty/bootstrap.js"));
+                      "~/bower_components/bootstrap/dist/js/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/vcom_basebundle").Include(
                       "~/Scripts/vcom_basebundle.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/thirdParty/bootstrap.css",
+                      "~/bower_components/bootstrap/dist/css/bootstrap.css",
                       "~/Content/site.css"));
 
         }
